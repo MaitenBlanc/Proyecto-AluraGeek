@@ -1,0 +1,47 @@
+.login {
+    background: #F5F5F5;
+    font-family: var(--font-raleway);
+}
+
+.form__login {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 3em 5em 3em;
+    gap: 1em;
+}
+
+.login__label {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.login__input {
+    padding: 1em;
+    width: 100%;
+    border: none;
+    border-bottom: 0.1em solid #C8C8C8;
+    border-radius: 0.3em;
+    margin: 0 auto;
+}
+
+.login__input::placeholder {
+    font-family: var(--font-raleway);
+}
+
+.login__button {
+    width: 40%;
+    font-size: 1em;
+    font-family: var(--font-raleway);
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    border: none;
+    padding: 0.8em 1em 0.8em 1em;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 64em) {
+    .login__button {
+        width: 100%;
+    }
+}

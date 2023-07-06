@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/productos-agregar.css">
+
+</head>
+
+<body>
+    <section class="menu__productosAgregar">
+        <a class="logo__productosAgregar" href="../index.html"><img class="img__productosAgregar"
+                src="../imagenes/Logo-alura.png" alt="Logo AluraGeek"></a>
+        <a class="menu__administrador" href="#">Menú Administrador</a>
+        <form class="search"><input class="input__search" type="search" placeholder="¿Qué deseas buscar?"
+                maxlength="50">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+        </form>
+    </section>
+
+    <section class="productos__agregar">
+        <form class="form__productos">
+            <label class="productos__label">Agregar nuevo producto</label>
+            <input class="productos__input" type="url" placeholder="URL de imagen" required>
+            <select class="productos__input" id="list__categories">
+                <option value="categoría">Categoría</option>
+                <option value="star__wars">Star Wars</option>
+                <option value="consolas">Consolas</option>
+                <option value="diversos">Diversos</option>
+            </select>
+            <input class="productos__input" type="text" placeholder="Nombre del producto" maxlength="40" required>
+            <input class="productos__input" type="number" placeholder="Precio del producto" step=".01" required>
+            <textarea class="productos__textarea" name="descripcion" cols="30" rows="10"
+                placeholder="Descripción del producto"></textarea>
+            <button class="productos__button">Agregar Producto</button>
+        </form>
+    </section>
+
+    <section class="contact">
+        <a href="../index.html"><img class="logo__aluraGeek" src="../imagenes/Logo-alura.png" alt="Logo AluraGeek"></a>
+        <nav class="pages">
+            <a href="#">Quienes somos</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Programa de fidelidad</a>
+            <a href="#">Nuestras Tiendas</a>
+            <a href="#">Quiero ser franquiciado</a>
+            <a href="#">Anuncie aquí</a>
+        </nav>
+        <form class="contact__form">
+            <label class="form__label">Hable con nosotros</label>
+            <input class="form__input" type="text" placeholder="Nombre" required>
+            <textarea class="form__textarea" name="mensaje" cols="30" rows="10"
+                placeholder="Escribe tu mensaje"></textarea>
+            <button class="form__button">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>Desarrollado por Maitén Blanc</h3>
+        <h3>2023</h3>
+    </footer>
+
+    <script src="../controllers/productos-controllers.js"></script>
+</body>
+
+</html>

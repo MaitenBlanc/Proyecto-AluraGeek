@@ -1,0 +1,261 @@
+.menu__productosAgregar {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    gap: 0.75em;
+}
+
+.img__productosAgregar {
+    display: flex;
+    width: 8em;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__administrador {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.1em solid var(--color-azul-oscuro);
+    color: var(--color-azul-oscuro);
+    font-size: 0.875em;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0.2em 1em 0.2em;
+    margin: 0 0.5em 0 0.5em;
+    font-family: var(--font-raleway);
+}
+
+.input__search {
+    display: none;
+}
+
+.bi.bi-search {
+    margin: 0.75em 0 0 1em;
+}
+
+.productos__agregar {
+    background-color: #F5F5F5;
+    font-family: var(--font-raleway);
+}
+
+.form__productos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    padding: 1em;
+    font-weight: bold;
+    padding-bottom: 2em;
+}
+
+.productos__label {
+    font-size: 1.375em;
+}
+
+.productos__input,
+.productos__textarea {
+    font-family: var(--font-raleway);
+    padding: 1em;
+    width: 88%;
+    resize: none;
+    border: none;
+    border-bottom: 0.1em solid #C8C8C8;
+    border-radius: 0.3em;
+    margin: 0 auto;
+}
+
+.productos__textarea {
+    height: 6em;
+}
+
+.productos__button {
+    font-family: var(--font-raleway);
+    font-size: 1em;
+    background-color: var(--color-azul-oscuro);
+    border: none;
+    padding: 1em;
+    color: var(--color-blanco);
+    width: 87%;
+    margin: 0 auto;
+}
+
+.logo__aluraGeek {
+    display: flex;
+    width: 12em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5.5em 0 5.5em;
+    padding: 1em 0 0 0;
+}
+
+@media screen and (min-width: 44em) {
+    .menu__productosAgregar {
+        display: grid;
+        grid-template-columns: 0.8fr 2fr 1fr;
+    }
+
+    .img__productosAgregar {
+        align-items: center;
+    }
+
+    .search {
+        display: flex;
+        position: relative;
+        border: none;
+        border-radius: 2em;
+        width: 70%;
+        background-color: #F5F5F5;
+        color: var(--color-gris-claro);
+        margin: auto 0;
+        padding: 0.7em;
+    }
+
+    .input__search {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+    }
+
+    .input__search::placeholder {
+        color: var(--color-gris-claro);
+    }
+
+    .bi.bi-search {
+        margin: 0 auto;
+    }
+
+    .menu__administrador {
+        order: 3;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0.1em solid var(--color-azul-oscuro);
+        color: var(--color-azul-oscuro);
+        font-size: 0.875em;
+        width: 80%;
+        text-align: center;
+        padding: 1em 0.2em 1em 0.2em;
+        font-family: var(--font-raleway);
+        margin: 0 auto;
+    }
+
+    .productos__button {
+        width: 88%;
+    }
+
+    .logo__aluraGeek {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo__aluraGeek {
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
+
+    .pages {
+        grid-column: 1/1;
+        text-align: left;
+    }
+
+    .contact__form {
+        float: right;
+        grid-column: 2/2;
+        grid-row: 1/4;
+        padding-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .menu__productosAgregar {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        justify-content: space-around;
+        margin: 1em 2em 1em 2em;
+    }
+
+    .search {
+        display: flex;
+        width: 60%;
+        height: 100%;
+    }
+
+    .input__search {
+        width: 80%;
+    }
+
+    .input__search::placeholder {
+        color: var(--color-gris-claro);
+    }
+
+    .bi.bi-search {
+        left: 3em;
+    }
+
+    .menu__administrador {
+        order: 3;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0.1em solid var(--color-azul-oscuro);
+        color: var(--color-azul-oscuro);
+        font-size: 0.875em;
+        width: 45%;
+        text-align: center;
+        padding: 1em 0.2em 1em 0.2em;
+        font-family: var(--font-raleway);
+        margin: 0 auto;
+    }
+
+    .productos__button {
+        width: 88%;
+    }
+
+    .logo__aluraGeek {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .productos__agregar {
+        padding: 2em 0 2em 0;
+    }
+
+    .form__productos {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .productos__label {
+        padding-left: 1.5em;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 2fr;
+        padding: 1em 5em 0 5em;
+    }
+
+    .logo__aluraGeek {
+        grid-column: 1/3;
+        transform: translateY(-150%);
+    }
+
+    .pages {
+        grid-column: 2/3;
+        text-align: left;
+        transform: translateY(5%);
+    }
+
+    .contact__form {
+        float: right;
+        grid-column: 3/3;
+        padding-top: 2em;
+        margin-bottom: 2em;
+    }
+}

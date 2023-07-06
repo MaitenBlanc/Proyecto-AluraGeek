@@ -1,0 +1,171 @@
+.menu {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.5fr;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+}
+
+.logo__aluraGeek {
+    width: 80%;
+    padding: 1em;
+}
+
+.menu__button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.1em solid var(--color-azul-oscuro);
+    color: var(--color-azul-oscuro);
+    font-size: 0.875em;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.input__search {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 0;
+}
+
+.bi.bi-search {
+    justify-items: center;
+    align-items: center;
+    margin: 1.3em 1.5em;
+}
+
+@media screen and (min-width: 44em) {
+    .menu {
+        width: 90%;
+        height: 5em;
+        justify-content: space-around;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 0.5em;
+    }
+
+    .logo__aluraGeek {
+        width: 100%;
+        max-width: 10em;
+        margin: 0 auto;
+    }
+
+    .logo__aluraGeek img {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .search {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        border: none;
+        border-radius: 2em;
+        width: 70%;
+        height: 50%;
+        background-color: #F5F5F5;
+        color: var(--color-gris-claro);
+        margin: auto 0;
+    }
+
+    .input__search {
+        width: 150%;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        margin-left: 1em;
+    }
+
+    .input__search::placeholder {
+        color: var(--color-gris-claro);
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .input__search:hover {
+        width: 100%;
+    }
+
+    .input__search:focus {
+        width: 100%;
+    }
+
+    .bi.bi-search {
+        width: 100%;
+        margin: 0.8em 0 0 1em;
+
+    }
+
+    .menu__button {
+        width: 90%;
+        height: 55%;
+        order: 3;
+        justify-content: left;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .menu {
+        width: 90%;
+        height: 5em;
+        justify-content: space-between;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+    }
+
+    .logo__aluraGeek {
+        display: flex;
+        width: 100%;
+        max-width: 10em;
+        margin: auto;
+    }
+
+    .search {
+        display: flex;
+        position: relative;
+        border: none;
+        border-radius: 2em;
+        width: 51.5%;
+        height: 50%;
+        background-color: #F5F5F5;
+        color: var(--color-gris-claro);
+        margin: auto 0;
+    }
+
+    .input__search {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        margin-left: 1em;
+    }
+
+    .input__search::placeholder {
+        color: var(--color-gris-claro);
+        font-family: 'Raleway', sans-serif;
+        width: 100%;
+    }
+
+    .input__search:hover {
+        width: 100%;
+    }
+
+    .input__search:focus {
+        width: 100%;
+    }
+
+    .bi.bi-search {
+        position: absolute;
+        transform: translate(10em);
+    }
+
+    .menu__button {
+        width: 60%;
+        height: 55%;
+        order: 3;
+        justify-content: left;
+        margin: auto;
+    }
+}

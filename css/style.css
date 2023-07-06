@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-raleway: 'Raleway', sans-serif;
+    --color-azul-oscuro: #2A7AE4;
+    --color-azul-claro: #EAF2FD;
+    --color-blanco: #FFFFFF;
+    --color-gris-claro: #A2A2A2;
+}

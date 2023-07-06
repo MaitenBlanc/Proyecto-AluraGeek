@@ -1,0 +1,80 @@
+.menu__login {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    justify-content: space-between;
+}
+
+.logo__aluraGeek {
+    width: 60%;
+    padding: 1em;
+}
+
+.search {
+    margin: 0 auto;
+    transform: translateX(90%);
+}
+
+@media screen and (min-width: 44em) {
+    .menu__login {
+        justify-content: space-around;
+        grid-template-columns: 0.5fr 2fr;
+    }
+
+    .logo__aluraGeek {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .search {
+        display: flex;
+        position: relative;
+        margin: auto 0;
+        transform: translateX(0);
+        width: 37%;
+        background-color: #F5F5F5;
+        margin-left: 1em;
+        border-radius: 2em;
+        padding: 0.5em;
+        color: var(--color-gris-claro);
+    }
+
+    .input__search {
+        width: 100%;
+    }
+
+    .input__search::placeholder {
+        color: var(--color-gris-claro);
+    }
+
+    .bi.bi-search {
+        margin: 0 auto;
+    }
+
+    .form__login {
+        width: 45%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .menu__login {
+        justify-content: space-around;
+        grid-template-columns: 0.5fr 2fr;
+    }
+
+    .logo__aluraGeek {
+        margin: 0 auto;
+    }
+
+    .search {
+        margin: auto 0;
+        transform: translateX(0);
+        width: 37%;
+    }
+
+    .form__login {
+        width: 30%;
+        margin: 0 auto;
+    }
+}
