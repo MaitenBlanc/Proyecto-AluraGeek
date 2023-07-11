@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/productos-agregar.css">
+    <link rel="stylesheet" href="../css/producto-agregado.css">
 
 </head>
 
@@ -34,22 +35,12 @@
         </form>
     </section>
 
-    <section class="productos__agregar">
-        <form class="form__productos" action="producto-agregado.html">
-            <label class="productos__label">Agregar nuevo producto</label>
-            <input class="productos__input" type="url" placeholder="URL de imagen" required>
-            <select class="productos__input" id="list__categories">
-                <option value="categoría">Categoría</option>
-                <option value="star__wars">Star Wars</option>
-                <option value="consolas">Consolas</option>
-                <option value="diversos">Diversos</option>
-            </select>
-            <input class="productos__input" type="text" placeholder="Nombre del producto" maxlength="40" required>
-            <input class="productos__input" type="number" placeholder="Precio del producto" step=".01" required>
-            <textarea class="productos__textarea" name="descripcion" cols="30" rows="10"
-                placeholder="Descripción del producto"></textarea>
-            <button class="productos__button">Agregar Producto</button>
-        </form>
+    <section class="producto__agregado">
+        <div class="div__producto">
+            <span class="span__productoAgregado"></span>
+            <h1 class="title__productoAgregado">Producto agregado</h1>
+        </div>
+        <a href="../html/productos.html" class="button__productoAgregado">Volver</a>
     </section>
 
     <section class="contact">

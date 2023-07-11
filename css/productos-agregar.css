@@ -142,6 +142,7 @@
 
     .productos__button {
         width: 88%;
+        cursor: pointer;
     }
 
     .logo__aluraGeek {

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/banner.css">
-  <!-- <link rel="stylesheet" href="css/productos.css"> -->
+  <link rel="stylesheet" href="css/productos.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
 
@@ -40,8 +40,8 @@
     <button class="banner__button">Ver Consolas</button>
   </section>
 
-  <section class="productos">
-
+  <section class="productos" data-product>
+    <h1 class="productos__titulo">Productos</h1>
   </section>
 
   <section class="contact">
@@ -58,7 +58,7 @@
       <label class="form__label">Hable con nosotros</label>
       <input class="form__input" type="text" placeholder="Nombre" required>
       <textarea class="form__textarea" name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-      <button class="form__button">Enviar mensaje</button>
+      <button class="form__button" onclick="clickBtn()">Enviar mensaje</button>
     </form>
   </section>
 
@@ -67,8 +67,8 @@
     <h3>2023</h3>
   </footer>
 
-  <!-- <script type="module" src="servicios/productos-servicios.js"></script> -->
   <script type="module" src="controllers/productos-controllers.js"></script>
+  <script type="module" src="servicios/productos-servicios.js"></script>
 </body>
 
 </html>

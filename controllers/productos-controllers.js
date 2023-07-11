@@ -1,15 +1,13 @@
-import "../servicios/productos-servicios.js";
+// import { productosServicios } from "../servicios/productos-servicios.js";
 
-// const contenedorProductos = document.querySelector(".productos");
-// // const tituloProductos = document.querySelector(".productos__titulo");
-// // let botonesVer = document.querySelector(".productos__ver");
-    
-// document.body.onload = nuevoProducto;
-
-const productos = document.querySelector('[productos]');
+// const contenedorProductos = document.getElementsByClassName("producto__nuevo");
+// const productoImagen = document.getElementsByClassName("productos__imagen");
+// const tituloProductos = document.getElementsByClassName("productos__titulo");
+// const precioProductos = document.getElementsByClassName("productos__precio");
+// let botonesVer = document.getElementsByClassName("productos__ver");
 
 const nuevoProducto = (name, imagenUrl, price, id) => {
-    
+
     const card = document.createElement("div");
     const contenido = `
         <div class = "producto__nuevo">
@@ -25,8 +23,9 @@ const nuevoProducto = (name, imagenUrl, price, id) => {
     return card;
 };
 
-productos.appendChild(nuevoProducto());
+const productos = document.querySelectorAll('[data-product]');
 
-productos.addEventListener("online", nuevoProducto());
-
-
+export const productosNuevos = {
+    nuevoProducto,
+    productos
+}
