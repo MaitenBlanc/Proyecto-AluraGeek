@@ -3,7 +3,7 @@ import { productosNuevos } from "../controllers/productos-controllers.js";
 // GET
 const http = new XMLHttpRequest();
 
-http.open('GET', 'http://localhost:3000/productos');
+http.open('GET', 'https://64adb00bb470006a5ec648e9.mockapi.io/productos');
 
 http.send();
 
@@ -17,7 +17,7 @@ http.onload = () => {
 };
 
 const listaProductos = () => {
-    fetch("http://localhost:3000/productos")
+    fetch("https://64adb00bb470006a5ec648e9.mockapi.io/productos")
         .then(response => response.json())
         .then(data => {
             listaProductos = data;
