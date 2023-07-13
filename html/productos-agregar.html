@@ -35,17 +35,19 @@
     </section>
 
     <section class="productos__agregar">
-        <form class="form__productos" action="producto-agregado.html">
+        <form class="form__productos" action="producto-agregado.html" data-form>
             <label class="productos__label">Agregar nuevo producto</label>
-            <input class="productos__input" type="url" placeholder="URL de imagen" required>
-            <select class="productos__input" id="list__categories">
+            <input class="productos__input" type="url" placeholder="URL de imagen" required data-url>
+            <select class="productos__input" id="list__categories" data-category>
                 <option value="categoría">Categoría</option>
                 <option value="star__wars">Star Wars</option>
                 <option value="consolas">Consolas</option>
                 <option value="diversos">Diversos</option>
             </select>
-            <input class="productos__input" type="text" placeholder="Nombre del producto" maxlength="40" required>
-            <input class="productos__input" type="number" placeholder="Precio del producto" step=".01" required>
+            <input class="productos__input" type="text" placeholder="Nombre del producto" maxlength="40" required
+                data-name>
+            <input class="productos__input" type="number" placeholder="Precio del producto" step=".01" required
+                data-price>
             <textarea class="productos__textarea" name="descripcion" cols="30" rows="10"
                 placeholder="Descripción del producto"></textarea>
             <button class="productos__button">Agregar Producto</button>

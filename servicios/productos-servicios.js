@@ -10,8 +10,8 @@ http.send();
 http.onload = () => {
     const data = JSON.parse(http.response);
     console.log(data)
-    data.forEach(async productos => {
-        const crearNuevoProducto = nuevoProducto(productos.name, productos.imagenUrl, productos.price, productos.id);
+    data.forEach(productos => {
+        const crearNuevoProducto = productosNuevos.nuevoProducto(productos.name, productos.imageUrl, productos.price, productos.id);
         productos.appendChild(crearNuevoProducto);
     });
 };
@@ -31,10 +31,27 @@ const listaProductos = () => {
 
 //POST
 
-// const crearProductos = () => {
-
-// };
+const crearProductos = (imageUrl, name, price) => {
+    fetch(`https://64adb00bb470006a5ec648e9.mockapi.io/productos`, {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            imageUrl,
+            price,
+            name
+        })
+    })
+        .then(respuesta => {
+            if (respuesta.ok) {
+                return respuesta.body;
+            }
+        })
+    throw new Error("No se pudo crear el producto")
+};
 
 export const productosServicios = {
-    listaProductos
+    listaProductos,
+    crearProductos
 };
