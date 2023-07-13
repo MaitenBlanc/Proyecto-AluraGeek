@@ -68,6 +68,7 @@
     justify-items: left;
     align-items: start;
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 44em) {

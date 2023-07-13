@@ -67,7 +67,7 @@
         width: 70%;
         height: 50%;
         background-color: #F5F5F5;
-        color: var(--color-gris-claro);
+        color: var(--color-gris-oscuro);
         margin: auto 0;
     }
 
@@ -80,7 +80,7 @@
     }
 
     .input__search::placeholder {
-        color: var(--color-gris-claro);
+        color: var(--color-gris-oscuro);
         font-family: 'Raleway', sans-serif;
     }
 
@@ -129,8 +129,8 @@
         border-radius: 2em;
         width: 51.5%;
         height: 50%;
-        background-color: #F5F5F5;
-        color: var(--color-gris-claro);
+        background-color: var(--color-gris-claro);
+        color: var(--color-gris-oscuro);
         margin: auto 0;
     }
 
@@ -143,7 +143,7 @@
     }
 
     .input__search::placeholder {
-        color: var(--color-gris-claro);
+        color: var(--color-gris-oscuro);
         font-family: 'Raleway', sans-serif;
         width: 100%;
     }

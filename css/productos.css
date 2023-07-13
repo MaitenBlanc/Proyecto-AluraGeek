@@ -1,12 +1,31 @@
 .productos {
     width: 100%;
     padding: 1em;
+    background-color: var(--color-gris-claro);
+}
+
+.productos__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .productos__titulo {
     font-family: var(--font-raleway);
     font-weight: bold;
     font-size: 2em;
+}
+
+.productos__button {
+    font-family: var(--font-raleway);
+    font-size: 1em;
+    background-color: var(--color-azul-oscuro);
+    border: none;
+    padding: 1em;
+    color: var(--color-blanco);
+    height: 50%;
+    margin-right: 3em;
 }
 
 /* @media screen and (min-width: 44em) {
@@ -18,3 +37,5 @@
         padding: 0.5em 0 1em 2em;
     }
 }
+
+/* SEGUIR VIENDO TODO ESTO!!!!!!!! */

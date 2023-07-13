@@ -31,11 +31,11 @@
         margin: auto 0;
         transform: translateX(0);
         width: 37%;
-        background-color: #F5F5F5;
+        background-color: var(--color-gris-claro);
         margin-left: 1em;
         border-radius: 2em;
         padding: 0.5em;
-        color: var(--color-gris-claro);
+        color: var(--color-gris-oscuro);
     }
 
     .input__search {
@@ -43,7 +43,7 @@
     }
 
     .input__search::placeholder {
-        color: var(--color-gris-claro);
+        color: var(--color-gris-oscuro);
     }
 
     .bi.bi-search {

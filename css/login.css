@@ -38,6 +38,8 @@
     border: none;
     padding: 0.8em 1em 0.8em 1em;
     margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
 }
 
 @media screen and (min-width: 64em) {
