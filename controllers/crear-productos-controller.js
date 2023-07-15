@@ -1,4 +1,4 @@
-import { productosServicios } from "../servicios/productos-servicios";
+import { productosServicios } from "../servicios/productos-servicios.js";
 
 const form = document.querySelector('[data-form]');
 
@@ -9,11 +9,5 @@ form.addEventListener("submit", (evento) => {
     const name = document.querySelector('[data-name]').value;
     const price = document.querySelector('[data-price]').value;
 
-    productosServicios.crearProductos(url, name, price)
-        .then(respuesta => {
-            window.location.href = "../index.html";
-            console.log(respuesta);
-        }).catch(error => {
-            console.log(error);
-        });
+    productosServicios.crearProductos(url, name, price);
 });

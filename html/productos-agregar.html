@@ -35,7 +35,7 @@
     </section>
 
     <section class="productos__agregar">
-        <form class="form__productos" action="producto-agregado.html" data-form>
+        <form class="form__productos" method="POST" data-form>
             <label class="productos__label">Agregar nuevo producto</label>
             <input class="productos__input" type="url" placeholder="URL de imagen" required data-url>
             <select class="productos__input" id="list__categories" data-category>
@@ -50,7 +50,7 @@
                 data-price>
             <textarea class="productos__textarea" name="descripcion" cols="30" rows="10"
                 placeholder="Descripción del producto"></textarea>
-            <button class="productos__button">Agregar Producto</button>
+            <button type="submit" class="productos__button">Agregar Producto</button>
         </form>
     </section>
 
@@ -77,6 +77,8 @@
         <h3>Desarrollado por Maitén Blanc</h3>
         <h3>2023</h3>
     </footer>
+
+    <script type="module" src="../controllers/crear-productos-controller.js"></script>
 </body>
 
 </html>

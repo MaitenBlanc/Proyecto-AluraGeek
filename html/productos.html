@@ -23,7 +23,7 @@
 
 <body>
     <section class="menu__login">
-        <img class="logo__aluraGeek" src="../imagenes/Logo-alura.png" alt="Logo AluraGeek" />
+        <a class="logo__aluraGeek" href="../index.html"><img src="../imagenes/Logo-alura.png" alt="Logo AluraGeek"></a>
         <form class="search"><input class="input__search" type="search" placeholder="¿Qué deseas buscar?"
                 maxlength="50">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
@@ -35,11 +35,13 @@
     </section>
 
     <section class="productos">
-        <div class="productos__div">
+        <div id="data-productos" class="productos__div">
             <h1 class="productos__titulo">Productos</h1>
             <a href="../html/productos-agregar.html" class="productos__button">Agregar Producto</a>
         </div>
     </section>
+
+
 
     <section class="contact">
         <a class="logo__aluraGeek" href="../index.html"><img src="../imagenes/Logo-alura.png" alt="Logo AluraGeek"></a>
@@ -66,7 +68,7 @@
     </footer>
 
     <script type="module" src="../controllers/productos-controllers.js"></script>
-    <script type="module" src="servicios/productos-servicios.js"></script>
+    <script type="module" src="../servicios/productos-servicios.js"></script>
 </body>
 
 </html>

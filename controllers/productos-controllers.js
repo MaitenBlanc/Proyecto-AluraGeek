@@ -23,7 +23,7 @@ const nuevoProducto = (name, imageUrl, price, id) => {
     return card;
 };
 
-const productos = document.querySelectorAll('[data-product]');
+const productos = document.getElementById('data-productos');
 
 export const productosNuevos = {
     nuevoProducto,

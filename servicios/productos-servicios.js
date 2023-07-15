@@ -10,9 +10,11 @@ http.send();
 http.onload = () => {
     const data = JSON.parse(http.response);
     console.log(data)
-    data.forEach(productos => {
-        const crearNuevoProducto = productosNuevos.nuevoProducto(productos.name, productos.imageUrl, productos.price, productos.id);
-        productos.appendChild(crearNuevoProducto);
+    data.forEach(prod => {
+        const crearNuevoProducto = productosNuevos.nuevoProducto(prod.name, prod.imageUrl, prod.price, prod.id);
+        //let productoss = document.getElementById("data-prod");
+        //productoss.appendChild(crearNuevoProducto);
+        if(productosNuevos.productos) productosNuevos.productos.appendChild(crearNuevoProducto);
     });
 };
 
@@ -30,8 +32,8 @@ const listaProductos = () => {
 }
 
 //POST
-
 const crearProductos = (imageUrl, name, price) => {
+    console.log("Entra a crearProductos");
     fetch(`https://64adb00bb470006a5ec648e9.mockapi.io/productos`, {
         method: "POST",
         headers: {
@@ -45,10 +47,12 @@ const crearProductos = (imageUrl, name, price) => {
     })
         .then(respuesta => {
             if (respuesta.ok) {
-                return respuesta.body;
+                window.location.href = "../index.html";
             }
         })
-    throw new Error("No se pudo crear el producto")
+        .catch(error => {
+            throw new Error("No se pudo crear el producto")
+        })
 };
 
 export const productosServicios = {
