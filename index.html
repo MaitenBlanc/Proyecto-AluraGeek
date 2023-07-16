@@ -1,74 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/productos.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/menu.css">
-  <link rel="stylesheet" href="css/banner.css">
-  <link rel="stylesheet" href="css/productos.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <body>
+    <section class="menu">
+      <a class="logo__aluraGeek" href="index.html"
+        ><img src="imagenes/Logo-alura.png" alt="Logo AluraGeek"
+      /></a>
+      <a href="html/login.html" class="menu__button">Login</a>
+      <form class="search">
+        <input
+          class="input__search"
+          type="search"
+          placeholder="¿Qué deseas buscar?"
+          maxlength="50"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </form>
+    </section>
 
-</head>
+    <section class="banner">
+      <img
+        class="banner__img"
+        src="imagenes/banner-image.jpg"
+        alt="Mano sosteniendo un hongo de Mario Bros"
+      />
+      <h2 class="banner__title">Febrero Promocional</h2>
+      <p class="banner__text">Productos seleccionados con 33% de descuento</p>
+      <button class="banner__button">Ver Consolas</button>
+    </section>
 
-<body>
-  <section class="menu">
-    <a class="logo__aluraGeek" href="index.html"><img src="imagenes/Logo-alura.png" alt="Logo AluraGeek"></a>
-    <a href="html/login.html" class="menu__button">Login</a>
-    <form class="search"><input class="input__search" type="search" placeholder="¿Qué deseas buscar?" maxlength="50">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-        viewBox="0 0 16 16">
-        <path
-          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-      </svg>
-    </form>
-  </section>
+    <section class="productos">
+      <div class="productos__menu">
+        <h1 class="productos__titulo">Productos</h1>
+        <a class="productos__btn">Ver todo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+        </svg></a>
+      </div>
+      <div id="data-productos" class="productos__nuevos">
 
-  <section class="banner">
-    <img class="banner__img" src="imagenes/banner-image.jpg" alt="Mano sosteniendo un hongo de Mario Bros">
-    <h2 class="banner__title">Febrero Promocional</h2>
-    <p class="banner__text">Productos seleccionados con 33% de descuento</p>
-    <button class="banner__button">Ver Consolas</button>
-  </section>
+      </div>
+    </section>
 
-  <section id="data-productos" class="productos">
-    <h1 class="productos__titulo">Productos</h1>
-  </section>
+    <section class="contact">
+      <img
+        class="contact__logoAlura"
+        src="imagenes/Logo-alura.png"
+        alt="Logo AluraGeek"
+      />
+      <nav class="pages">
+        <a href="#">Quienes somos</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Programa de fidelidad</a>
+        <a href="#">Nuestras Tiendas</a>
+        <a href="#">Quiero ser franquiciado</a>
+        <a href="#">Anuncie aquí</a>
+      </nav>
+      <form class="contact__form">
+        <label class="form__label">Hable con nosotros</label>
+        <input class="form__input" type="text" placeholder="Nombre" required />
+        <textarea
+          class="form__textarea"
+          name="mensaje"
+          cols="30"
+          rows="10"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+        <button class="form__button" onclick="clickBtn()">
+          Enviar mensaje
+        </button>
+      </form>
+    </section>
 
-  <section class="contact">
-    <img class="contact__logoAlura" src="imagenes/Logo-alura.png" alt="Logo AluraGeek">
-    <nav class="pages">
-      <a href="#">Quienes somos</a>
-      <a href="#">Política de privacidad</a>
-      <a href="#">Programa de fidelidad</a>
-      <a href="#">Nuestras Tiendas</a>
-      <a href="#">Quiero ser franquiciado</a>
-      <a href="#">Anuncie aquí</a>
-    </nav>
-    <form class="contact__form">
-      <label class="form__label">Hable con nosotros</label>
-      <input class="form__input" type="text" placeholder="Nombre" required>
-      <textarea class="form__textarea" name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-      <button class="form__button" onclick="clickBtn()">Enviar mensaje</button>
-    </form>
-  </section>
+    <footer>
+      <h3>Desarrollado por Maitén Blanc</h3>
+      <h3>2023</h3>
+    </footer>
 
-  <footer>
-    <h3>Desarrollado por Maitén Blanc</h3>
-    <h3>2023</h3>
-  </footer>
-
-  <script type="module" src="controllers/productos-controllers.js"></script>
-  <script type="module" src="servicios/productos-servicios.js"></script>
-</body>
-
+    <script type="module" src="controllers/productos-controllers.js"></script>
+    <script type="module" src="servicios/productos-servicios.js"></script>
+  </body>
 </html>
