@@ -3,7 +3,7 @@ import { productosNuevos } from "../controllers/productos-controllers.js";
 // GET
 const http = new XMLHttpRequest();
 
-http.open('GET', 'https://64adb00bb470006a5ec648e9.mockapi.io/productos');
+http.open('GET', 'http://localhost:3000/productos');
 
 http.send();
 
@@ -19,7 +19,7 @@ http.onload = () => {
 };
 
 const listaProductos = () => {
-    fetch("https://64adb00bb470006a5ec648e9.mockapi.io/productos")
+    fetch("http://localhost:3000/productos")
         .then(response => response.json())
         .then(data => {
             listaProductos = data;
@@ -34,7 +34,7 @@ const listaProductos = () => {
 //POST
 const crearProductos = (imageUrl, name, price) => {
     console.log("Entra a crearProductos");
-    fetch(`https://64adb00bb470006a5ec648e9.mockapi.io/productos`, {
+    fetch(`http://localhost:3000/productos`, {
         method: "POST",
         headers: {
             "Content-type": "application/json"

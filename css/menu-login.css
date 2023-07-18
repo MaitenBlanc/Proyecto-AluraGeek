@@ -10,8 +10,9 @@
 }
 
 .search {
-    margin: 0 auto;
-    transform: translateX(90%);
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 @media screen and (min-width: 44em) {
