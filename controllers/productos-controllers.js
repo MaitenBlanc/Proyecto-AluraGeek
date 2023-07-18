@@ -6,11 +6,7 @@
 // const precioProductos = document.getElementsByClassName("productos__precio");
 // let botonesVer = document.getElementsByClassName("productos__ver");
 
-<<<<<<< HEAD
-const nuevoProducto = (name, imageUrl, price, id) => {
-=======
 const nuevoProducto = (name, imageUrl, price, id, categoria) => {
->>>>>>> 6961996213584c9e6ad3bbb08aa9cae549bcd1a9
     const card = document.createElement("div");
     const contenido = `<div class="producto__nuevo">
         <img class="producto__imagen" src="${imageUrl}" alt="${name}">
