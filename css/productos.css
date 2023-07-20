@@ -26,10 +26,7 @@
     justify-content: right;
     align-items: center;
     font-size: 0.875em;
-<<<<<<< HEAD
     cursor: pointer;
-=======
->>>>>>> 6961996213584c9e6ad3bbb08aa9cae549bcd1a9
 }
 
 .bi.bi-arrow-right-short {
@@ -43,13 +40,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
     margin-bottom: 1em;
 }
 
-=======
-}
->>>>>>> 6961996213584c9e6ad3bbb08aa9cae549bcd1a9
 .productos__button {
     font-size: 1em;
     background-color: var(--color-azul-oscuro);
@@ -89,20 +82,10 @@
     .productos__btn {
         font-size: 1em;
     }
-<<<<<<< HEAD
 
     .productos__nuevos {
         grid-template-columns: repeat(4, 1fr);
-
     }
-
-=======
-    .productos__nuevos {
-        grid-template-columns: repeat(4, 1fr);
-        
-    }
-    
->>>>>>> 6961996213584c9e6ad3bbb08aa9cae549bcd1a9
 }
 
 @media screen and (min-width: 64em) {
@@ -110,5 +93,3 @@
         padding: 0.5em 0 1em 2em;
     }
 }
-
-/* SEGUIR VIENDO TODO ESTO!!!!!!!! */
