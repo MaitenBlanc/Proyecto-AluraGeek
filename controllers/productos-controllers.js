@@ -23,14 +23,14 @@ const nuevoProducto = (name, imageUrl, price, id, categoria) => {
 
 const productos = document.getElementById("data-productos");
 
-const descripcionProducto = (name, imageUrl, precio, id) => {
-    `<div class="producto__descripcion">
-        <img class="producto__imagen" src="${imageUrl}" alt="${name}">
-        <h3 class="producto__titulo">${name}</h3>
-        <p class="producto__precio">${price}</p>
-        
-    </div>`
-};
+// const descripcionProducto = (name, imageUrl, precio, id) => {
+//     `<div class="producto__descripcion">
+//         <img class="producto__imagen" src="${imageUrl}" alt="${name}">
+//         <h3 class="producto__titulo">${name}</h3>
+//         <p class="producto__precio">${price}</p>
+
+//     </div>`
+// };
 
 // SEGUIRRRRR!!!!!!!!!!!!!!!!!!!!
 export const productosNuevos = {
