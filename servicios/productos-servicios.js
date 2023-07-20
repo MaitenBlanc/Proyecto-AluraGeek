@@ -3,7 +3,7 @@ import { productosNuevos } from "../controllers/productos-controllers.js";
 // GET
 const http = new XMLHttpRequest();
 
-http.open('GET', 'http://localhost:3000/productos');
+http.open('GET', 'https://raw.githubusercontent.com/MaitenBlanc/Proyecto-AluraGeek/master/db.json');
 
 http.send();
 
@@ -19,7 +19,7 @@ http.onload = () => {
 };
 
 const listaProductos = () => {
-    fetch("http://localhost:3000/productos")
+    fetch("https://raw.githubusercontent.com/MaitenBlanc/Proyecto-AluraGeek/master/db.json")
         .then(response => response.json())
         .then(data => {
             listaProductos = data;
@@ -34,7 +34,7 @@ const listaProductos = () => {
 //POST
 const crearProductos = (imageUrl, name, price) => {
     console.log("Entra a crearProductos");
-    fetch(`http://localhost:3000/productos`, {
+    fetch(`https://raw.githubusercontent.com/MaitenBlanc/Proyecto-AluraGeek/master/db.json`, {
         method: "POST",
         headers: {
             "Content-type": "application/json"
