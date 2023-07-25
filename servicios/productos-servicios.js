@@ -11,7 +11,6 @@ http.onload = () => {
     const data = JSON.parse(http.response);
     console.log(data)
     data.forEach(prod => {
-        console.log(prod);
         const crearNuevoProducto = productosNuevos.nuevoProducto(prod.name, prod.imageUrl, prod.price, prod.id);
         //let productoss = document.getElementById("data-prod");
         //productoss.appendChild(crearNuevoProducto);
