@@ -19,7 +19,7 @@ http.onload = () => {
 };
 
 const listaProductos = () => {
-    fetch("https://raw.githubusercontent.com/MaitenBlanc/Proyecto-AluraGeek/master/db.json")
+    fetch(`https://raw.githubusercontent.com/MaitenBlanc/Proyecto-AluraGeek/master/db.json`)
         .then(response => response.json())
         .then(data => {
             listaProductos = data;
