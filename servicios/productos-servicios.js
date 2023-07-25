@@ -16,6 +16,7 @@ http.onload = () => {
         //productoss.appendChild(crearNuevoProducto);
         if(productosNuevos.productos) productosNuevos.productos.appendChild(crearNuevoProducto);
     });
+    console.log(prod);
 };
 
 const listaProductos = () => {
