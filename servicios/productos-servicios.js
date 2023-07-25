@@ -8,7 +8,7 @@ http.open('GET', 'https://raw.githubusercontent.com/MaitenBlanc/Proyecto-AluraGe
 http.send();
 
 http.onload = () => {
-    const data = JSON.parse(http.response);
+    const data = JSON.parse(data);
     console.log(data)
     data.forEach(prod => {
         const crearNuevoProducto = productosNuevos.nuevoProducto(prod.name, prod.imageUrl, prod.price, prod.id);
