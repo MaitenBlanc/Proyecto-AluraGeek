@@ -2,126 +2,126 @@
   "productos": [
     {
       "name": "Producto XYZ",
-      "imageUrl": "../imagenes/productos/producto-xyz-1.png",
+      "imageUrl": "imagenes/productos/producto-xyz-1.png",
       "price": "$60.00",
       "id": 1,
       "categoria": "Star Wars"
     },
     {
       "name": "Producto XYZ",
-      "imageUrl": "../imagenes/productos/producto-xyz-2.png",
+      "imageUrl": "imagenes/productos/producto-xyz-2.png",
       "price": "$60.00",
       "id": 2,
       "categoria": "Star Wars"
     },
     {
       "name": "Producto XYZ",
-      "imageUrl": "../imagenes/productos/producto-xyz-3.png",
+      "imageUrl": "imagenes/productos/producto-xyz-3.png",
       "price": "$60.00",
       "id": 3,
       "categoria": "Star Wars"
     },
     {
       "name": "Producto XYZ",
-      "imageUrl": "../imagenes/productos/producto-xyz-4.png",
+      "imageUrl": "imagenes/productos/producto-xyz-4.png",
       "price": "$60.00",
       "id": 4,
       "categoria": "Star Wars"
     },
     {
       "name": "Producto XYZ",
-      "imageUrl": "../imagenes/productos/producto-xyz-5.png",
+      "imageUrl": "imagenes/productos/producto-xyz-5.png",
       "price": "$60.00",
       "id": 5,
       "categoria": "Star Wars"
     },
     {
       "name": "Producto XYZ",
-      "imageUrl": "../imagenes/productos/producto-xyz-6.png",
+      "imageUrl": "imagenes/productos/producto-xyz-6.png",
       "price": "$60.00",
       "id": 6,
       "categoria": "Star Wars"
     },
     {
       "name": "Control XYZ",
-      "imageUrl": "../imagenes/productos/control-xyz-1.png",
+      "imageUrl": "imagenes/productos/control-xyz-1.png",
       "price": "$60.00",
       "id": 7,
       "categoria": "Consolas"
     },
     {
       "name": "Control y consola XYZ",
-      "imageUrl": "../imagenes/productos/control-xyz-2.png",
+      "imageUrl": "imagenes/productos/control-xyz-2.png",
       "price": "$60.00",
       "id": 8,
       "categoria": "Consolas"
     },
     {
       "name": "Consola XYZ",
-      "imageUrl": "../imagenes/productos/control-xyz-3.png",
+      "imageUrl": "imagenes/productos/control-xyz-3.png",
       "price": "$60.00",
       "id": 9,
       "categoria": "Consolas"
     },
     {
       "name": "Control XYZ",
-      "imageUrl": "../imagenes/productos/control-xyz-4.png",
+      "imageUrl": "imagenes/productos/control-xyz-4.png",
       "price": "$60.00",
       "id": 10,
       "categoria": "Consolas"
     },
     {
       "name": "Consola XYZ",
-      "imageUrl": "../imagenes/productos/control-xyz-5.png",
+      "imageUrl": "imagenes/productos/control-xyz-5.png",
       "price": "$60.00",
       "id": 11,
       "categoria": "Consolas"
     },
     {
       "name": "Game Boy Color",
-      "imageUrl": "../imagenes/productos/control-xyz-6.png",
+      "imageUrl": "imagenes/productos/control-xyz-6.png",
       "price": "$60.00",
       "id": 12,
       "categoria": "Consolas"
     },
     {
       "name": "Camisa Atari",
-      "imageUrl": "../imagenes/productos/camisa-1.png",
+      "imageUrl": "imagenes/productos/camisa-1.png",
       "price": "$60.00",
       "id": 13,
       "categoria": "Diversos"
     },
     {
       "name": "Camisa SNES",
-      "imageUrl": "../imagenes/productos/camisa-2.png",
+      "imageUrl": "imagenes/productos/camisa-2.png",
       "price": "$60.00",
       "id": 14,
       "categoria": "Diversos"
     },
     {
       "name": "Control y consola XYZ",
-      "imageUrl": "../imagenes/productos/camisa-3.png",
+      "imageUrl": "imagenes/productos/camisa-3.png",
       "price": "$60.00",
       "id": 15,
       "categoria": "Diversos"
     },
     {
       "name": "Control y consola XYZ",
-      "imageUrl": "../imagenes/productos/camisa-4.png",
+      "imageUrl": "imagenes/productos/camisa-4.png",
       "price": "$60.00",
       "id": 16,
       "categoria": "Diversos"
     },
     {
       "name": "Control y consola XYZ",
-      "imageUrl": "../imagenes/productos/camisa-5.png",
+      "imageUrl": "imagenes/productos/camisa-5.png",
       "price": "$60.00",
       "id": 17,
       "categoria": "Diversos"
     },
     {
       "name": "Producto XYZ",
-      "imageUrl": "../imagenes/productos/camisa-6.png",
+      "imageUrl": "imagenes/productos/camisa-6.png",
       "price": "$60.00",
       "id": 18,
       "categoria": "Diversos"
